@@ -1,0 +1,13 @@
+node_modules
+dist
+.env*
+*.tsbuildinfo
+.cache
+.DS_Store
+*.pem
+.tshy-build
+.tshy
+.turbo
+.tshy-build
+**/src/package.json
+packages/fwoosh/public/logo.*
