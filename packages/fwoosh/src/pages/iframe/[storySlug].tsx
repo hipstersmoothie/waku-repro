@@ -2,13 +2,11 @@ import { fileURLToPath } from "url";
 import { StoryContextProvider } from "../../components/Context";
 import path from "path";
 
+import A11yDecorator from "../../A11yDecorator";
+import CenteredDecorator from "../../CenteredDecorator";
+
+const decorators = [A11yDecorator, CenteredDecorator];
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-const decorators = [
-  path.join(__dirname, "../../CenteredDecorator.tsx"),
-  path.join(__dirname, "../../A11yDecorator.tsx"),
-];
-
 const file = path.join(__dirname, "../../Button.stories.tsx");
 const storyName = "Primary";
 
@@ -25,11 +23,7 @@ export default async function Iframe() {
   let example = <Example />;
 
   if (decorators.length !== 0) {
-    const decoratorComponents = await Promise.all(
-      decorators
-        .map((filepath) => import(filepath).then((mod) => mod.default))
-        .reverse()
-    );
+    const decoratorComponents = await Promise.all(decorators);
 
     for (const Decorator of decoratorComponents) {
       example = (
