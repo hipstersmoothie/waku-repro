@@ -1,9 +1,13 @@
 "use client";
 
 import { createContext, useContext } from "react";
-import { StoryContext } from "@fwoosh/types";
 
-const StoryContext = createContext<StoryContext | undefined>(undefined);
+interface StoryContext {
+  page: any;
+  story: any;
+}
+
+const StoryContextC = createContext<StoryContext | undefined>(undefined);
 
 export const StoryContextProvider = ({
   children,
@@ -13,7 +17,7 @@ export const StoryContextProvider = ({
   value: StoryContext;
 }) => {
   return (
-    <StoryContext.Provider value={value}>{children}</StoryContext.Provider>
+    <StoryContextC.Provider value={value}>{children}</StoryContextC.Provider>
   );
 };
-export const useStoryContext = () => useContext(StoryContext);
+export const useStoryContext = () => useContext(StoryContextC);
