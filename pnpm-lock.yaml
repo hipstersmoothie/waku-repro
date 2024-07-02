@@ -9,17 +9,17 @@ importers:
   .:
     dependencies:
       react:
-        specifier: 19.0.0-rc.0
-        version: 19.0.0-rc.0
+        specifier: 19.0.0-rc-100dfd7dab-20240701
+        version: 19.0.0-rc-100dfd7dab-20240701
       react-dom:
-        specifier: 19.0.0-rc.0
-        version: 19.0.0-rc.0(react@19.0.0-rc.0)
+        specifier: 19.0.0-rc-100dfd7dab-20240701
+        version: 19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701)
       react-server-dom-webpack:
-        specifier: 19.0.0-rc.0
-        version: 19.0.0-rc.0(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)(webpack@5.92.0)
+        specifier: 19.0.0-rc-100dfd7dab-20240701
+        version: 19.0.0-rc-100dfd7dab-20240701(react-dom@19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701))(react@19.0.0-rc-100dfd7dab-20240701)(webpack@5.92.0)
       waku:
         specifier: ^0.21.0-beta.0
-        version: 0.21.0-beta.0(@swc/helpers@0.5.11)(@types/node@20.14.2)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react-server-dom-webpack@19.0.0-rc.0(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)(webpack@5.92.0))(react@19.0.0-rc.0)(terser@5.31.1)
+        version: 0.21.0-beta.0(@swc/helpers@0.5.11)(@types/node@20.14.2)(react-dom@19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701))(react-server-dom-webpack@19.0.0-rc-100dfd7dab-20240701(react-dom@19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701))(react@19.0.0-rc-100dfd7dab-20240701)(webpack@5.92.0))(react@19.0.0-rc-100dfd7dab-20240701)(terser@5.31.1)
     devDependencies:
       typescript:
         specifier: 5.4.5
@@ -2595,6 +2595,11 @@ packages:
       react: 19.0.0-rc.0
       react-dom: 19.0.0-rc.0
 
+  react-dom@19.0.0-rc-100dfd7dab-20240701:
+    resolution: {integrity: sha512-1VQkUQegr8ejWp6YANC6HAtS5L12Ym6cAFlPOOFvaY0tgfOf37dduR3iynsyRkxfEQi42D1HwTEyBi03KxuLOQ==}
+    peerDependencies:
+      react: 19.0.0-rc-100dfd7dab-20240701
+
   react-dom@19.0.0-rc.0:
     resolution: {integrity: sha512-MhgN2RMYFUkZekkFbsXg9ycwEGaMBzATpTNvGGvWNA9BZZEkdzIL4pv7iDuZKn48YoGARk8ydu4S+Ehd8Yrc4g==}
     peerDependencies:
@@ -2616,6 +2621,14 @@ packages:
       react: ^16.14.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.14.0 || ^17.0.0 || ^18.0.0
 
+  react-server-dom-webpack@19.0.0-rc-100dfd7dab-20240701:
+    resolution: {integrity: sha512-2epipWG1pwjLWHsGT+5TDRjWCaEKEPxXABGhNPs5jMlZsL8F6z52v0LN0JVnrwKnQQbfufBt1Dg/wlHNIaBC3Q==}
+    engines: {node: '>=0.10.0'}
+    peerDependencies:
+      react: 19.0.0-rc-100dfd7dab-20240701
+      react-dom: 19.0.0-rc-100dfd7dab-20240701
+      webpack: ^5.59.0
+
   react-server-dom-webpack@19.0.0-rc.0:
     resolution: {integrity: sha512-nnSBQnXKEgfgSx6veKJg3TdRmRyn+tyOuKwKdHCI1SuR+WL2JLDM+NfZrP5DFie7w5ZCNTjS/LdACV4YuRuxDg==}
     engines: {node: '>=0.10.0'}
@@ -2634,6 +2647,10 @@ packages:
     peerDependencies:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
+
+  react@19.0.0-rc-100dfd7dab-20240701:
+    resolution: {integrity: sha512-qy+1N8lIy1TC1Tj5yhOW4EaRqVWHCtO94OjhxJYjTa6/lwn+ZI49D3Xk4RkdZyWDgclUK8HAALxhsgiHibowMQ==}
+    engines: {node: '>=0.10.0'}
 
   react@19.0.0-rc.0:
     resolution: {integrity: sha512-8nrDCl5uE54FHeKqKrEO0TS+10bT4cxutJGb2okiJc0FHMQ6I3FeItaqly/1nbijlhSO3HmAVyPIexIQQWYAtQ==}
@@ -2709,6 +2726,9 @@ packages:
 
   safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
+
+  scheduler@0.25.0-rc-100dfd7dab-20240701:
+    resolution: {integrity: sha512-aEBSd2lcLFsvlbWbwGXpttfGyMfyJjSvQ13o3kiSeCduKa8WlW5Go0b8c8hQ+p6CHLeXKWnKL+TC/vjbyFqSCw==}
 
   scheduler@0.25.0-rc.0:
     resolution: {integrity: sha512-B3aSqMfoRkucM94MztZD1CyNyf68W9A3dL/TT453G6uNcxMBqGQ+rhFKyxNnWH/mfRHlGBr0tF0F472JCETH4g==}
@@ -5892,6 +5912,11 @@ snapshots:
       react: 19.0.0-rc.0
       react-dom: 19.0.0-rc.0(react@19.0.0-rc.0)
 
+  react-dom@19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701):
+    dependencies:
+      react: 19.0.0-rc-100dfd7dab-20240701
+      scheduler: 0.25.0-rc-100dfd7dab-20240701
+
   react-dom@19.0.0-rc.0(react@19.0.0-rc.0):
     dependencies:
       react: 19.0.0-rc.0
@@ -5908,6 +5933,14 @@ snapshots:
       react: 19.0.0-rc.0
       react-dom: 19.0.0-rc.0(react@19.0.0-rc.0)
 
+  react-server-dom-webpack@19.0.0-rc-100dfd7dab-20240701(react-dom@19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701))(react@19.0.0-rc-100dfd7dab-20240701)(webpack@5.92.0):
+    dependencies:
+      acorn-loose: 8.4.0
+      neo-async: 2.6.2
+      react: 19.0.0-rc-100dfd7dab-20240701
+      react-dom: 19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701)
+      webpack: 5.92.0
+
   react-server-dom-webpack@19.0.0-rc.0(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)(webpack@5.92.0(@swc/core@1.5.24)(esbuild@0.21.5)):
     dependencies:
       acorn-loose: 8.4.0
@@ -5923,14 +5956,6 @@ snapshots:
       react: 19.0.0-rc.0
       react-dom: 19.0.0-rc.0(react@19.0.0-rc.0)
       webpack: 5.92.0(@swc/core@1.5.24)
-
-  react-server-dom-webpack@19.0.0-rc.0(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)(webpack@5.92.0):
-    dependencies:
-      acorn-loose: 8.4.0
-      neo-async: 2.6.2
-      react: 19.0.0-rc.0
-      react-dom: 19.0.0-rc.0(react@19.0.0-rc.0)
-      webpack: 5.92.0
 
   react-stately@3.31.1(react@19.0.0-rc.0):
     dependencies:
@@ -5967,6 +5992,8 @@ snapshots:
       prop-types: 15.8.1
       react: 19.0.0-rc.0
       react-dom: 19.0.0-rc.0(react@19.0.0-rc.0)
+
+  react@19.0.0-rc-100dfd7dab-20240701: {}
 
   react@19.0.0-rc.0: {}
 
@@ -6079,6 +6106,8 @@ snapshots:
       queue-microtask: 1.2.3
 
   safe-buffer@5.2.1: {}
+
+  scheduler@0.25.0-rc-100dfd7dab-20240701: {}
 
   scheduler@0.25.0-rc.0: {}
 
@@ -6361,16 +6390,16 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.31.1
 
-  waku@0.21.0-beta.0(@swc/helpers@0.5.11)(@types/node@20.14.2)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react-server-dom-webpack@19.0.0-rc.0(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)(webpack@5.92.0(@swc/core@1.5.24)(esbuild@0.21.5)))(react@19.0.0-rc.0)(terser@5.31.1):
+  waku@0.21.0-beta.0(@swc/helpers@0.5.11)(@types/node@20.14.2)(react-dom@19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701))(react-server-dom-webpack@19.0.0-rc-100dfd7dab-20240701(react-dom@19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701))(react@19.0.0-rc-100dfd7dab-20240701)(webpack@5.92.0))(react@19.0.0-rc-100dfd7dab-20240701)(terser@5.31.1):
     dependencies:
       '@hono/node-server': 1.11.2
       '@swc/core': 1.5.24(@swc/helpers@0.5.11)
       '@vitejs/plugin-react': 4.3.0(vite@5.2.12(@types/node@20.14.2)(terser@5.31.1))
       dotenv: 16.4.5
       hono: 4.4.2
-      react: 19.0.0-rc.0
-      react-dom: 19.0.0-rc.0(react@19.0.0-rc.0)
-      react-server-dom-webpack: 19.0.0-rc.0(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)(webpack@5.92.0(@swc/core@1.5.24)(esbuild@0.21.5))
+      react: 19.0.0-rc-100dfd7dab-20240701
+      react-dom: 19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701)
+      react-server-dom-webpack: 19.0.0-rc-100dfd7dab-20240701(react-dom@19.0.0-rc-100dfd7dab-20240701(react@19.0.0-rc-100dfd7dab-20240701))(react@19.0.0-rc-100dfd7dab-20240701)(webpack@5.92.0)
       rsc-html-stream: 0.0.3
       vite: 5.2.12(@types/node@20.14.2)(terser@5.31.1)
     transitivePeerDependencies:
@@ -6384,7 +6413,7 @@ snapshots:
       - supports-color
       - terser
 
-  waku@0.21.0-beta.0(@swc/helpers@0.5.11)(@types/node@20.14.2)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react-server-dom-webpack@19.0.0-rc.0(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)(webpack@5.92.0))(react@19.0.0-rc.0)(terser@5.31.1):
+  waku@0.21.0-beta.0(@swc/helpers@0.5.11)(@types/node@20.14.2)(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react-server-dom-webpack@19.0.0-rc.0(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)(webpack@5.92.0(@swc/core@1.5.24)(esbuild@0.21.5)))(react@19.0.0-rc.0)(terser@5.31.1):
     dependencies:
       '@hono/node-server': 1.11.2
       '@swc/core': 1.5.24(@swc/helpers@0.5.11)
@@ -6393,7 +6422,7 @@ snapshots:
       hono: 4.4.2
       react: 19.0.0-rc.0
       react-dom: 19.0.0-rc.0(react@19.0.0-rc.0)
-      react-server-dom-webpack: 19.0.0-rc.0(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)(webpack@5.92.0)
+      react-server-dom-webpack: 19.0.0-rc.0(react-dom@19.0.0-rc.0(react@19.0.0-rc.0))(react@19.0.0-rc.0)(webpack@5.92.0(@swc/core@1.5.24)(esbuild@0.21.5))
       rsc-html-stream: 0.0.3
       vite: 5.2.12(@types/node@20.14.2)(terser@5.31.1)
     transitivePeerDependencies:
